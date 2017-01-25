@@ -19,20 +19,20 @@ describe('TodoService', function () {
     });
 
     it('should add todo', function () {
-        service.addTodo('Finish example project');
+        service.addTodo('Test todo 1');
         expect(service.todos.length).toBe(1);
-        expect(service.todos[0].label).toBe('Finish example project');
+        expect(service.todos[0].label).toBe('Test todo 1');
         expect(service.todos[0].done).toBe(false);
     });
 
     it('should toggle todo', function () {
-        service.addTodo('Finish example project');
+        service.addTodo('Test todo 1');
         expect(service.todos[0].done).toBe(false);
 
-        service.toggleTodo('Finish example project');
+        service.toggleTodo('Test todo 1');
         expect(service.todos[0].done).toBe(true);
 
-        service.toggleTodo('Finish example project');
+        service.toggleTodo('Test todo 1');
         expect(service.todos[0].done).toBe(false);
     });
 

@@ -23,13 +23,13 @@ describe('TodoService', function() {
     });
 
     it('should toggle todo', function () {
-        service.addTodo('Finish example project');
+        service.addTodo('Test todo 1');
         assert.equal(service.todos[0].done, false);
 
-        service.toggleTodo('Finish example project');
+        service.toggleTodo('Test todo 1');
         assert.equal(service.todos[0].done, true);
 
-        service.toggleTodo('Finish example project');
+        service.toggleTodo('Test todo 1');
         assert.equal(service.todos[0].done, false);
     });
 
